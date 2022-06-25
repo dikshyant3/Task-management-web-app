@@ -1,0 +1,61 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    box-shadow: inset;
+}
+
+.textbox {
+    width: 100%;
+    overflow: hidden;
+    font-size: 25px;
+    padding: 6px;
+    margin: 6px;
+    border-bottom: 1px solid lightgreen;
+}
+
+.textbox input {
+    border: none;
+    outline: none;
+    background: none;
+    color: #000000;
+    font-size: 0.5em;
+    width: 15rem;
+    float: left;
+    margin: 0.3em;
+}
+
+.textbox i {
+    float: left;
+    width: 20px;
+    text-align: center;
+}
+
+.container #checkbox {
+    padding: 6px;
+    margin: 6px;
+}
+
+.button {
+    background: blue;
+    color: #ffffff;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid lightgreen;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 12px;
+}
+
+.button:hover {
+    background-color: #ffffff;
+}
