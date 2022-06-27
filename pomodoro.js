@@ -1,5 +1,6 @@
 var minutes = 25;
 var seconds = "00";
+let Btn = document.getElementById("button");
 
 function updateCount() {
   document.getElementById("minutes").innerHTML = minutes;
@@ -13,7 +14,9 @@ function start() {
 
   var minutes_interval = setInterval(minutesTimer, 60000);
   var seconds_interval = setInterval(secondsTimer, 1000);
-  // document.getElementById("button").onclick().innerHTML = stop;
+}
+function stop() {
+  clearTimeout();
 }
 function minutesTimer() {
   minutes--;
@@ -30,3 +33,14 @@ function secondsTimer() {
     seconds = 60;
   }
 }
+Btn.onclick = function () {
+  if (Btn.innerHTML == "Start") {
+    if (!(minutes == 0 && seconds == 0)) {
+      Btn.innerHTML = "Stop";
+      start();
+    } else {
+      Btn.innerHTML = "Start";
+      stop();
+    }
+  }
+};
