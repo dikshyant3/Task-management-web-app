@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Notes App</title>
-    <meta charset="UTF-8">
-    <meta name=viewport content="width=device-width,initial scale=1.0">
-    <link rel="stylesheet" href="notes.css">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial scale=1.0" />
+    <link rel="stylesheet" href="notes.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+  </head>
 
-</head>
-
-<body>
-    <div class="notes" id="notes">
-        <div class="notes_sidebar">
-            <button type="button" class="notes_add">Add Note</button>
-            <div class="notes_list">
-                <div class="notes_list-item notes_list-item--selected">
-                    <div class="notes_small-title">Lecture Notes</div>
-                    <div class="notes_small-body">Just Learning Javascript</div>
-                    <div class="notes_updated">Tuesday 9:05am</div>
-
-                </div>
-            </div>
+  <body>
+    <div class="notes" id="app">
+      <div class="notes_sidebar">
+        <button type="button" class="notes_add" id="notes_add">Add Note</button>
+        <div class="notes_list">
+          <div class="notes_list-item notes_list-item--selected">
+            <div class="notes_small-title">Lecture Notes</div>
+            <div class="notes_small-body">Just Learning Javascript</div>
+            <div class="notes_updated">Tuesday 9:05am</div>
+          </div>
         </div>
-        <div class="notes_preview">
-            <input type="text" class="notes_title" placeholder="Enter a title.....">
-            <textarea id="notes_body"> </textarea>
-        </div>
+      </div>
+      <div class="notes_preview">
+        <input
+          type="text"
+          class="notes_title"
+          placeholder="Enter a title....."
+        />
+        <textarea id="notes_body"> </textarea>
+      </div>
     </div>
 
-
     <script src="notes.js"></script>
-</body>
-
+    <!-- <script src="main.js" type="module"></script> -->
+  </body>
 </html>
