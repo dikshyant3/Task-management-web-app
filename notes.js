@@ -40,13 +40,9 @@ function showNotes() {
   let notesElm = document.getElementById("notes");
   if (notesObj.length != 0) {
     notesElm.innerHTML = html;
-  } else {
-    notesElm.innerHTML = `<input
-    type="text"
-    class="notes_title"
-    placeholder="Enter a title....."
-  />
-  <textarea id="notes_body"> </textarea>`;
+    //   } else {
+    //     notesElm.innerHTML = `Nothing to show!`;
+    //   }
   }
 }
 
