@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Notes App</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial scale=1.0" />
+    <link rel="stylesheet" href="notesapp.css" />
+    <!-- Icons link -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="icon" type="images/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <div class="popup-box">
+      <div class="popup">
+        <div class="content">
+          <header>
+            <p>Add a note</p>
+            <i class="uil uil-times"></i>
+          </header>
+          <form action="#">
+            <div class="area title">
+              <label>Title</label>
+              <input type="text" />
+            </div>
+            <div class="area description">
+              <label>Description</label>
+              <textarea></textarea>
+            </div>
+            <button id="addBtn">Add Note</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <li class="add-box">
+        <div class="icon">
+          <i class="uil uil-plus"></i>
+        </div>
+        <p>Add a new note</p>
+      </li>
+      <li class="notes">
+        <div class="details">
+          <p>This is a title</p>
+          <span>Description</span>
+        </div>
+        <div class="bottom-content">
+          <span>July 16,2022</span>
+          <div class="settings">
+            <i class="uil uil-ellipsis-h"></i>
+            <ul class="menu">
+              <li><i class="uil uil-pen"></i>Edit</li>
+              <li><i class="uil uil-trash"></i>Delete</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </div>
+    <script src="notes.js"></script>
+  </body>
+</html>
