@@ -20,7 +20,7 @@ body {
 .container li {
   list-style: none;
   background: #fff;
-  height: 250px;
+  height: 265px;
   padding: 1rem 1.5rem;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.45);
@@ -62,6 +62,24 @@ header,
 .notes .details {
   overflow-y: auto;
   max-height: 10rem;
+}
+.note .details::-webkit-scrollbar,
+.popup textarea::-webkit-scrollbar {
+  width: 0;
+}
+.note .details:hover::-webkit-scrollbar,
+.popup textarea:hover::-webkit-scrollbar {
+  width: 5px;
+}
+.note .details:hover::-webkit-scrollbar-track,
+.popup textarea:hover::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+.note .details:hover::-webkit-scrollbar-thumb,
+.popup textarea:hover::-webkit-scrollbar-thumb {
+  background: #e6e6e6;
+  border-radius: 25px;
 }
 .notes p {
   font-size: 1.3rem;
