@@ -1,17 +1,29 @@
+/*this is for importing the sign of lock and user*/
+
 @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
-* {
-    box-sizing: border-box;
-    padding: 0;
+body {
     margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(login.jpg) no-repeat;
+    background-size: cover;
 }
 
-.container {
+.login-box {
+    width: 280px;
     position: absolute;
+    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    border: 1px solid black;
-    box-shadow: inset;
+    color: white;
+}
+
+.login-box h1 {
+    float: left;
+    font-size: 50;
+    border-bottom: 5px solid lightgreen;
+    margin-bottom: 50px;
+    padding: 5px;
 }
 
 .textbox {
@@ -27,11 +39,11 @@
     border: none;
     outline: none;
     background: none;
-    color: #000000;
-    font-size: 0.5em;
-    width: 15rem;
+    color: white;
+    font-size: 12px;
+    width: 60px;
     float: left;
-    margin: 0.3em;
+    margin: 8px;
 }
 
 .textbox i {
@@ -40,22 +52,13 @@
     text-align: center;
 }
 
-.container #checkbox {
-    padding: 6px;
-    margin: 6px;
-}
-
 .button {
-    background: blue;
-    color: #ffffff;
+    background: none;
+    color: white;
     width: 100%;
     padding: 5px;
     border: 1px solid lightgreen;
     cursor: pointer;
     margin: 10px;
     font-size: 12px;
-}
-
-.button:hover {
-    background-color: #ffffff;
 }
