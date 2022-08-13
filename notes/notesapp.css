@@ -10,12 +10,13 @@
 body {
   font-family: "Poppins", sans-serif;
   background: #88abff;
+  /* overflow: hidden; */
 }
 .container {
   margin: 3rem;
   display: grid;
-  gap: 25px;
-  grid-template-columns: repeat(auto-fill, 265px);
+  gap: 35px;
+  grid-template-columns: repeat(4, 265px);
 }
 .container li {
   list-style: none;

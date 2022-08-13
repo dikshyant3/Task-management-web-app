@@ -55,6 +55,9 @@ form {
   padding: 0;
   max-width: 370px;
   margin: 5px auto;
+  position: relative;
+  right: 6rem;
+  top: 15%;
 }
 form button {
   background: rgb(25, 67, 255);
