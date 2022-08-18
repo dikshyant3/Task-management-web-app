@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signin.css">
+    <title>Xnotes | Signup</title>
+</head>
+
+<body>
+    <div class="left-side">
+        <img class="logo" src="logo.png" alt="website logo">
+        <div class="text">
+            <h1 id="sign-up1">Sign Up to</h1>
+            <h1 id="sign-up2">Xnotes</h1>
+            <div class="icons">
+                <img class="notes" src="notes.png" alt="notes_icon">
+                <h1 id="notes">Notes</h1>
+                <img class="todo" src="todo.png" alt="todo_icon">
+                <h1 id="todo">Todo</h1>
+                <img class="bell" src="bell.png" alt="pomodoro_icon">
+                <h1 id="pomodoro">Pomodoro</h1>
+                <h2 id="up1">If you already have an account you can</h2>
+                <a id="up3" href="signin.html">login here !</a>
+            </div>
+            <!-- <img class="illustration" src="signup.png" alt="illustration"> -->
+        </div>
+    </div>
+    <div class="right-side">
+        <h1 id="right-signup">Sign Up</h1>
+        <form action="/signin" method="post">
+            <!-- {% csrf_token %} -->
+            <label for=""></label>
+            <input type="text" id="first_name" name="first_name" placeholder="First name" required>
+            <br>
+
+            <label for=""></label>
+            <input type="text" id="last_name" name="last_name" placeholder="Last name" required>
+            <br>
+
+            <label for=""></label>
+            <input type="text" id="username" name="username" placeholder="User name" required>
+            <br>
+
+            <label for=""></label>
+            <input type="email" id="email" name="email" placeholder="Enter email" required>
+            <br>
+
+            <label for=""></label>
+            <input type="password" id="password" name="password" placeholder="Enter password" required>
+            <br>
+
+            <label for=""></label>
+            <input type="cpassword" id="cpassword" name="cpassword" placeholder="Confirm password" required>
+            <br>
+
+            <button type="submit" id="submit">Sign Up</button>
+        </form>
+        <h3 id="copyright">©2022 Xnotes All right reserved.</h3>
+    </div>
+</body>
+
+</html>

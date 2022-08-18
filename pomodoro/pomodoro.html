@@ -4,9 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Timer With 🔔</title>
+    <link rel="stylesheet" href="nav.css" />
+    <script
+      src="https://kit.fontawesome.com/19690584d6.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="pomodoro.css" />
   </head>
   <body>
+
+    <!--Navbar -->
+    <header>
+      <div class="navBar">
+        <a href="#" class="toggleMenu">
+          <span class="icons"></span>
+        </a>
+        <ul class="navItems">
+          <li>
+            <a href="notesappupdated.html">
+              <i class="fa-solid fa-clone"></i>
+              <span style="--g: 1">Notes</span>
+            </a>
+          </li>
+          <li>
+            <a href="todo.html">
+              <i class="fa-solid fa-list-ul"></i
+              ><span style="--g: 2">Todos</span>
+             </a>
+          </li>
+          <li>
+            <a href="./pomodoro/pomodoro.html">
+              <i class="fa-solid fa-bell"></i
+              ><span style="--g: 3">Pomodoro</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+     </nav> 
+
+    <script>
+      var toggleClick = document.querySelector(".toggleMenu");
+      var navBar = document.querySelector(".navBar");
+
+      toggleClick.addEventListener("click", () => {
+        toggleClick.classList.toggle("active");
+        navBar.classList.toggle("active");
+      });
+    </script>
+    <!-- pomodoro clock -->
     <h1>Pomodro ⏲ with 🛎</h1>
 
     <figure class="clock">
