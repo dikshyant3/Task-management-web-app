@@ -1,64 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    {% load static %}
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Timer With 🔔</title>
-    <link rel="stylesheet" href="nav.css" />
+    <link href="{% static 'css/nav.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/pomodoro.css' %}" rel="stylesheet" />
+
     <script
       src="https://kit.fontawesome.com/19690584d6.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="pomodoro.css" />
   </head>
   <body>
 
-    <!--Navbar -->
-    <header>
-      <div class="navBar">
-        <a href="#" class="toggleMenu">
-          <span class="icons"></span>
-        </a>
-        <ul class="navItems">
-          <li>
-<<<<<<< HEAD
-            <a href="notesappupdated.html">
-=======
-            <a href="../loginpage.html">
-              <i class="fa-solid fa-user"></i>
-              <span style="--g: 1">Profile</span>
-            </a>
-          </li>
-          <li>
-            <a href="../notes/notesappupdated.html">
->>>>>>> 6645873d6dbc107cfef9cb6c1c1f76e7c83db8f7
-              <i class="fa-solid fa-clone"></i>
-              <span style="--g: 1">Notes</span>
-            </a>
-          </li>
-          <li>
-<<<<<<< HEAD
-            <a href="todo.html">
-=======
-            <a href="../todos/todo.html">
->>>>>>> 6645873d6dbc107cfef9cb6c1c1f76e7c83db8f7
-              <i class="fa-solid fa-list-ul"></i
-              ><span style="--g: 2">Todos</span>
-             </a>
-          </li>
-          <li>
-<<<<<<< HEAD
-            <a href="./pomodoro/pomodoro.html">
-=======
-            <a href="pomodoro.html">
->>>>>>> 6645873d6dbc107cfef9cb6c1c1f76e7c83db8f7
-              <i class="fa-solid fa-bell"></i
-              ><span style="--g: 3">Pomodoro</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </header>
+
+    {% url 'home_url_name' as home %}
+    {% url 'todo_url_name' as todo %}
+    {% url 'pomodoro_url_name' as pomodoro %}
+    {% url 'logoutUser_url_name' as logoutUser %}
+      <!--Navbar -->
+      <div>
+        <a href="notesappupdated.html"><img class="logo" src="{% static '/images/logo.png'%}" alt="logo"></a>
+    </div>
+
+      <header>
+        <div class="navBar">
+          <a href="#" class="toggleMenu">
+            <span class="icons"></span>
+          </a>
+          <ul class="navItems">
+            <li>
+              <a href="/">
+                <i class="fa-solid fa-clone"></i>
+                <span style="--g: 1">Notes</span>
+              </a>
+            </li>
+            <li>
+              <a href="/todo">
+                <i class="fa-solid fa-list-ul"></i
+                ><span style="--g: 2">Todos</span>
+               </a>
+            </li>
+            <li>
+              <a href="/pomodoro">
+                <i class="fa-solid fa-bell"></i
+                ><span style="--g: 3">Pomodoro</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="/logout">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span style="--g: 4">Logout</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
      </nav> 
 
     <script>
@@ -71,11 +71,7 @@
       });
     </script>
     <!-- pomodoro clock -->
-<<<<<<< HEAD
-    <h1>Pomodro ⏲ with 🛎</h1>
-=======
     <h1>Pomodoro ⏲ with 🛎</h1>
->>>>>>> 6645873d6dbc107cfef9cb6c1c1f76e7c83db8f7
 
     <figure class="clock">
       <div class="mins">0</div>
@@ -110,8 +106,8 @@
       <button type="submit">Save settings</button>
     </form>
 
-    <script src="settings.js"></script>
-    <script src="timer.js"></script>
-    <script src="progress.js"></script>
+    <script src="{% static '/js/settings.js' %}"></script>
+    <script src="{% static '/js/timer.js' %}"></script>
+    <script src="{% static '/js/progress.js' %}"></script>
   </body>
 </html>

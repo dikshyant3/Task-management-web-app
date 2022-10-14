@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Notes App</title>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial scale=1.0" />
+    <link href="{% static 'css/nav.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/notesapp.css' %}" rel="stylesheet" />
+
+
+    <!-- Icons link -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+    <script
+      src="https://kit.fontawesome.com/19690584d6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="images/x-icon" href="{% static 'images/favicon.ico' %}" />
+  </head>
+  <body>
+
+	{% url 'home_url_name' as home %}
+	{% url 'todo_url_name' as todo %}
+	{% url 'pomodoro_url_name' as pomodoro %}
+	{% url 'logoutUser_url_name' as logoutUser %}
+    <!--Navbar -->
+    <div>
+      <a href="notesappupdated.html"><img class="logo" src="{% static '/images/logo.png'%}" alt="logo"></a>
+  </div>
+    <header>
+      <div class="navBar">
+        <a href="#" class="toggleMenu">
+          <span class="icons"></span>
+        </a>
+        <ul class="navItems">
+          <li>
+            <a href="/">
+              <i class="fa-solid fa-clone"></i>
+              <span style="--g: 1">Notes</span>
+            </a>
+          </li>
+          <li>
+            <a href="/todo">
+              <i class="fa-solid fa-list-ul"></i
+              ><span style="--g: 2">Todos</span>
+             </a>
+          </li>
+          <li>
+            <a href="/pomodoro">
+              <i class="fa-solid fa-bell"></i
+              ><span style="--g: 3">Pomodoro</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="/logout">
+              <i class="fa-solid fa-right-from-bracket"></i>
+              <span style="--g: 4">Logout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+     </nav> 
+
+    <script>
+      var toggleClick = document.querySelector(".toggleMenu");
+      var navBar = document.querySelector(".navBar");
+
+      toggleClick.addEventListener("click", () => {
+        toggleClick.classList.toggle("active");
+        navBar.classList.toggle("active");
+      });
+    </script>
+
+  <!--  Notes -->
+    <div class="popup-box">
+      <div class="popup">
+        <div class="content">
+          <header>
+            <p>Add a note</p>
+            <i class="uil uil-times"></i>
+            <!-- <i class="fa-solid fa-xmark"></i> -->
+          </header>
+          <form action="#">
+            <div class="area title">
+              <label>Title</label>
+              <input type="text" />
+            </div>
+            <div class="area description">
+              <label>Description</label>
+              <textarea></textarea>
+            </div>
+            <button id="addBtn">Add Note</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <li class="add-box">
+        <div class="icon">
+          <i class="uil uil-plus"></i>
+            <!-- <i class="fa-solid fa-plus"></i> -->
+
+        </div>
+        <p>Add a new note</p>
+      </li>
+      <li class="notes">
+        <div class="details">
+          <p>This is a title</p>
+          <span>Description</span>
+        </div>
+        <div class="bottom-content">
+          <span>July 16,2022</span>
+          <div class="settings">
+            <i class="uil uil-ellipsis-h"></i>
+            <!-- <i class="fa-solid fa-ellipsis"></i> -->
+            <ul class="menu">
+              <li><i class="uil uil-pen"></i>
+                <!-- <i class="fa-solid fa-pen"></i> -->
+                Edit</li>
+              <li><i class="uil uil-trash"></i>
+                <!-- <i class="fa-solid fa-trash"></i> -->
+                Delete</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </div>
+    <script src="{% static '/js/notes.js' %}"></script>
+  </body>
+</html>
