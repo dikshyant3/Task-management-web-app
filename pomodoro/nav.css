@@ -24,11 +24,7 @@ header {
   transition: 0.4s ease;
 }
 .navBar.active {
-<<<<<<< HEAD
-  height: 18rem;
-=======
   height: 22rem;
->>>>>>> 6645873d6dbc107cfef9cb6c1c1f76e7c83db8f7
 }
 .toggleMenu {
   position: relative;
