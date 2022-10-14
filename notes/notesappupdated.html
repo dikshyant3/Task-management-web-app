@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
-
-
-<>
-  
+  <head>
     <title>Notes App</title>
     <link rel="stylesheet" href="notesapp.css" />
 
-
     <!-- Icons link -->
 
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-    <script src="https://kit.fontawesome.com/19690584d6.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/19690584d6.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="icon" type="images/x-icon" href="notes.ico" />
-</head>
-<body>
+  </head>
+  <body>
     <!--Navbar -->
-     <header>
+    <header>
       <div class="navBar">
         <a href="#" class="toggleMenu">
           <span class="icons"></span>
@@ -37,9 +39,8 @@
           <li>
             <a href="../todos/todo.html">
               <i class="fa-solid fa-list-ul"></i
-
               ><span style="--g: 2">Todos</span>
-             </a>
+            </a>
           </li>
           <li>
             <a href="../pomodoro/pomodoro.html">
@@ -54,12 +55,9 @@
               <span style="--g: 4">Logout</span>
             </a>
           </li>
-
- 
         </ul>
       </div>
     </header>
-     
 
     <script>
       var toggleClick = document.querySelector(".toggleMenu");
@@ -71,10 +69,9 @@
       });
     </script>
 
-  <!--  Notes -->
+    <!--  Notes -->
 
-  <!-- <h3>Notes</h3> -->
-
+    <!-- <h3>Notes</h3> -->
 
     <div class="popup-box">
       <div class="popup">
@@ -83,56 +80,56 @@
             <p>Add a note</p>
             <i class="uil uil-times"></i>
 
-                        <!-- <i class="fa-solid fa-xmark"></i> -->
-    </header>
-    <form action="#">
-        <div class="area title">
-            <label>Title</label>
-            <input type="text" />
+            <!-- <i class="fa-solid fa-xmark"></i> -->
+          </header>
+          <form action="#">
+            <div class="area title">
+              <label>Title</label>
+              <input type="text" />
+            </div>
+            <div class="area description">
+              <label>Description</label>
+              <textarea></textarea>
+            </div>
+            <button id="addBtn">Add Note</button>
+          </form>
         </div>
-        <div class="area description">
-            <label>Description</label>
-            <textarea></textarea>
-        </div>
-        <button id="addBtn">Add Note</button>
-    </form>
-    </div>
-    </div>
+      </div>
     </div>
     <div class="container">
-        <li class="add-box">
-            <div class="icon">
-                <i class="uil uil-plus"></i>
-                <!-- <i class="fa-solid fa-plus"></i> -->
-
-            </div>
-            <p>Add a new note</p>
-        </li>
-        <li class="notes">
-            <div class="details">
-                <p>This is a title</p>
-                <span>Description</span>
-            </div>
-            <div class="bottom-content">
-                <span>July 16,2022</span>
-                <div class="settings">
-                    <i class="uil uil-ellipsis-h"></i>
-                    <!-- <i class="fa-solid fa-ellipsis"></i> -->
-                    <ul class="menu">
-                        <li><i class="uil uil-pen"></i>
-                            <!-- <i class="fa-solid fa-pen"></i> -->
-                            Edit</li>
-                        <li><i class="uil uil-trash"></i>
-                            <!-- <i class="fa-solid fa-trash"></i> -->
-                            Delete</li>
-                    </ul>
-                </div>
-            </div>
-        </li>
+      <li class="add-box">
+        <div class="icon">
+          <i class="uil uil-plus"></i>
+          <!-- <i class="fa-solid fa-plus"></i> -->
+        </div>
+        <p>Add a new note</p>
+      </li>
+      <li class="notes">
+        <div class="details">
+          <p>This is a title</p>
+          <span>Description</span>
+        </div>
+        <div class="bottom-content">
+          <span>July 16,2022</span>
+          <div class="settings">
+            <i class="uil uil-ellipsis-h"></i>
+            <!-- <i class="fa-solid fa-ellipsis"></i> -->
+            <ul class="menu">
+              <li>
+                <i class="uil uil-pen"></i>
+                <!-- <i class="fa-solid fa-pen"></i> -->
+                Edit
+              </li>
+              <li>
+                <i class="uil uil-trash"></i>
+                <!-- <i class="fa-solid fa-trash"></i> -->
+                Delete
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
     </div>
     <script src="notes.js"></script>
-</body>
-
+  </body>
 </html>
-
-           
